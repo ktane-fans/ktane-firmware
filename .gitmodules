@@ -1,0 +1,15 @@
+[submodule "dependencies/device-os"]
+	path = dependencies/device-os
+	url = https://github.com/particle-iot/device-os
+[submodule "dependencies/debounce"]
+	path = dependencies/debounce
+	url = https://github.com/dwcares/debounce
+[submodule "dependencies/Particle-NeoPixel"]
+	path = dependencies/Particle-NeoPixel
+	url = https://github.com/technobly/Particle-NeoPixel
+[submodule "dependencies/SevSeg"]
+	path = dependencies/SevSeg
+	url = https://github.com/DeanIsMe/SevSeg
+[submodule "dependencies/sparkcore-liquidcrystal-master"]
+	path = dependencies/sparkcore-liquidcrystal-master
+	url = https://github.com/adesh/sparkcore-liquidcrystal-master

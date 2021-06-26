@@ -1,0 +1,6 @@
+{
+	"files.exclude": {
+		"modules/*/shared": true,
+		"bin/*.bin": true
+	}
+}

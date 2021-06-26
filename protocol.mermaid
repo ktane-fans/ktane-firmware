@@ -1,0 +1,17 @@
+%% https://mermaidjs.github.io/sequenceDiagram.html
+
+sequenceDiagram
+    participant M as Main
+    participant S as Simon
+    participant N
+    M ->> S: Setup
+    M ->> N: Setup
+    S -->> M: Register Module
+    N -->> M: Register Module
+    M ->> S: Start
+    M ->> N: Start
+    N -->> M: Module Solved
+    S -->> M: Module Failed
+    M ->> N: Game Updated
+    M ->> S: Game Updated
+    S -->> M: Module Solved

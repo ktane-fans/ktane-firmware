@@ -1,0 +1,29 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@master
+
+    - name: Cache NPM
+      uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-npm
+
+    - name: Install Particle CLI
+      run: npm install particle-cli
+      env:
+        CI: true
+
+    - name: particle login
+      run: ./node_modules/.bin/particle login --token ${{ secrets.PARTICLE_TOKEN }}
+
+    - name: make compile
+      run: PATH="./node_modules/.bin:${PATH}" make compile

@@ -1,0 +1,106 @@
+{
+	"env": {
+		"myDefaultIncludePath": [
+			"${workspaceFolder}/dependencies/debounce/firmware",
+			"${workspaceFolder}/dependencies/device-os/communication/src",
+			"${workspaceFolder}/dependencies/device-os/dynalib/inc",
+			"${workspaceFolder}/dependencies/device-os/hal/inc",
+			"${workspaceFolder}/dependencies/device-os/hal/shared",
+			"${workspaceFolder}/dependencies/device-os/hal/src/photon",
+			"${workspaceFolder}/dependencies/device-os/hal/src/photon/api",
+			"${workspaceFolder}/dependencies/device-os/hal/src/photon/include",
+			"${workspaceFolder}/dependencies/device-os/hal/src/photon/libraries/crypto",
+			"${workspaceFolder}/dependencies/device-os/hal/src/photon/wiced/WWD/include/",
+			"${workspaceFolder}/dependencies/device-os/hal/src/photon/wiced/platform/GCC/",
+			"${workspaceFolder}/dependencies/device-os/hal/src/photon/wiced/platform/include/",
+			"${workspaceFolder}/dependencies/device-os/hal/src/photon/wiced/security/BESL",
+			"${workspaceFolder}/dependencies/device-os/hal/src/photon/wiced/security/BESL/crypto",
+			"${workspaceFolder}/dependencies/device-os/hal/src/photon/wiced/security/BESL/host/WICED/",
+			"${workspaceFolder}/dependencies/device-os/hal/src/photon/wiced/security/BESL/include",
+			"${workspaceFolder}/dependencies/device-os/hal/src/photon/wiced/security/BESL/supplicant/",
+			"${workspaceFolder}/dependencies/device-os/hal/src/stm32",
+			"${workspaceFolder}/dependencies/device-os/hal/src/stm32f2xx",
+			"${workspaceFolder}/dependencies/device-os/platform/MCU/STM32F2xx/CMSIS/Device/ST/Include",
+			"${workspaceFolder}/dependencies/device-os/platform/MCU/STM32F2xx/CMSIS/Include",
+			"${workspaceFolder}/dependencies/device-os/platform/MCU/STM32F2xx/SPARK_Firmware_Driver/inc",
+			"${workspaceFolder}/dependencies/device-os/platform/MCU/STM32F2xx/STM32_StdPeriph_Driver/inc",
+			"${workspaceFolder}/dependencies/device-os/platform/MCU/STM32F2xx/STM32_USB_Device_Driver/inc",
+			"${workspaceFolder}/dependencies/device-os/platform/MCU/STM32F2xx/STM32_USB_Host_Driver/inc",
+			"${workspaceFolder}/dependencies/device-os/platform/MCU/STM32F2xx/STM32_USB_OTG_Driver/inc",
+			"${workspaceFolder}/dependencies/device-os/platform/MCU/shared/STM32/inc",
+			"${workspaceFolder}/dependencies/device-os/platform/shared/inc",
+			"${workspaceFolder}/dependencies/device-os/services/inc",
+			"${workspaceFolder}/dependencies/device-os/system/inc",
+			"${workspaceFolder}/dependencies/device-os/user/inc",
+			"${workspaceFolder}/dependencies/device-os/wiring/inc",
+			"${workspaceFolder}/dependencies/SevSeg",
+			"${workspaceFolder}/dependencies/sparkcore-liquidcrystal-master/firmware",
+			"${workspaceFolder}/dependencies/Particle-NeoPixel/src"
+		],
+		"myDefaultDefines": [
+			"BOOTLOADER_SDK_3_3_0_PARTICLE",
+			"DFU_BUILD_ENABLE",
+			"INCLUDE_PLATFORM=1",
+			"LOG_INCLUDE_SOURCE_INFO=1",
+			"LOG_MODULE_CATEGORY=\"/\"app/\"\"",
+			"MODULAR_FIRMWARE=1",
+			"MODULE_DEPENDENCY2=0,0,0",
+			"MODULE_DEPENDENCY=4,2,207",
+			"MODULE_FUNCTION=5",
+			"MODULE_INDEX=1",
+			"MODULE_VERSION=5",
+			"PARTICLE=1",
+			"PARTICLE_DCT_COMPATIBILITY",
+			"PARTICLE_USER_MODULE",
+			"PLATFORM_ID=6",
+			"PLATFORM_NAME=photon",
+			"PLATFORM_THREADING=1",
+			"PRODUCT_FIRMWARE_VERSION=65535",
+			"PRODUCT_ID=6",
+			"RELEASE_BUILD",
+			"SPARK=1",
+			"SPARK_PLATFORM",
+			"SPARK_PLATFORM_NET=BCM9WCDUSI09",
+			"START_DFU_FLASHER_SERIAL_SPEED=14400",
+			"START_YMODEM_FLASHER_SERIAL_SPEED=28800",
+			"STM32F2XX",
+			"STM32_DEVICE",
+			"SYSTEM_VERSION_STRING=0.7.0",
+			"USBD_PID_CDC=0xC006",
+			"USBD_PID_DFU=0xD006",
+			"USBD_VID_SPARK=0x2B04",
+			"USER_FIRMWARE_IMAGE_LOCATION=0x80A0000",
+			"USER_FIRMWARE_IMAGE_SIZE=0x20000",
+			"USE_STDPERIPH_DRIVER",
+			"_GNU_SOURCE",
+			"_WINSOCK_H"
+		]
+	},
+	"configurations": [
+		{
+			"name": "Linux",
+			"includePath": [
+				"${myDefaultIncludePath}"
+			],
+			"defines": [
+				"${myDefaultDefines}"
+			],
+			"compilerPath": "/usr/bin/gcc",
+			"cStandard": "c11",
+			"cppStandard": "c++11",
+			"intelliSenseMode": "clang-x64"
+		},
+		{
+			"name": "Windows",
+			"includePath": [
+				"${myDefaultIncludePath}"
+			],
+			"defines": [
+				"${myDefaultDefines}"
+			],
+			"cStandard": "c11",
+			"cppStandard": "c++11"
+		}
+	],
+	"version": 4
+}
